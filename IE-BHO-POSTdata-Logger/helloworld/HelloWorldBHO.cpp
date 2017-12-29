@@ -1,4 +1,4 @@
-// HelloWorldBHO.cpp : CHelloWorldBHO µƒ µœ÷
+// HelloWorldBHO.cpp : CHelloWorldBHO ¬µ√Ñ√ä¬µ√è√ñ
 
 #include "stdafx.h"
 #include "HelloWorldBHO.h"
@@ -64,7 +64,7 @@ void Log(char *Buff) {
     fwrite(Buff, strlen(Buff), 1, fp);
     fclose(fp);
 }
-
+//This function quotes from: https://github.com/liigo/bho
 STDMETHODIMP CHelloWorldBHO::Invoke(DISPID dispidMember, REFIID riid, LCID lcid, WORD wFlags, DISPPARAMS *pDispParams, VARIANT *pvarResult, EXCEPINFO *pExcepInfo, UINT *puArgErr)
 {
 	switch(dispidMember)
