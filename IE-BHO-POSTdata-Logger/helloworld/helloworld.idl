@@ -1,0 +1,34 @@
+// helloworld.idl : helloworld 的 IDL 源
+//
+
+// 此文件将由 MIDL 工具处理以
+// 产生类型库(helloworld.tlb)和封送处理代码。
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(351CCB44-CB81-40FD-97C2-CC8924EB8C49),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IHelloWorldBHO : IDispatch{
+};
+[
+	uuid(60A4F654-5488-4F1B-A224-D414A9AD274A),
+	version(1.0),
+]
+library helloworldLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(6739AD8F-452B-4073-AAC9-37DA0AA6B17F)		
+	]
+	coclass HelloWorldBHO
+	{
+		[default] interface IHelloWorldBHO;
+	};
+};
+

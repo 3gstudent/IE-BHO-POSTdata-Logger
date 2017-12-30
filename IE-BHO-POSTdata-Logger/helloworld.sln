@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "helloworld", "helloworld\helloworld.vcxproj", "{42F95171-21F6-4D22-A33B-6ADA5C2409DB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "helloworldPS", "helloworld\helloworldPS.vcxproj", "{E4967BCE-8CDF-4800-BB77-6AA2E7E2A2FB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{42F95171-21F6-4D22-A33B-6ADA5C2409DB} = {42F95171-21F6-4D22-A33B-6ADA5C2409DB}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{42F95171-21F6-4D22-A33B-6ADA5C2409DB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{42F95171-21F6-4D22-A33B-6ADA5C2409DB}.Debug|Win32.Build.0 = Debug|Win32
+		{42F95171-21F6-4D22-A33B-6ADA5C2409DB}.Release|Win32.ActiveCfg = Release|Win32
+		{42F95171-21F6-4D22-A33B-6ADA5C2409DB}.Release|Win32.Build.0 = Release|Win32
+		{E4967BCE-8CDF-4800-BB77-6AA2E7E2A2FB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E4967BCE-8CDF-4800-BB77-6AA2E7E2A2FB}.Release|Win32.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

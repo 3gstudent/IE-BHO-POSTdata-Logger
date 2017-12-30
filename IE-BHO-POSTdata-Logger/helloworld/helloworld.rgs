@@ -1,0 +1,17 @@
+HKLM {  
+  NoRemove SOFTWARE {  
+    NoRemove Microsoft {     
+      NoRemove Windows {  
+        NoRemove CurrentVersion {  
+          NoRemove Explorer {  
+            NoRemove 'Browser Helper Objects' {  
+              ForceRemove '{6739AD8F-452B-4073-AAC9-37DA0AA6B17F}' = s 'HelloWorldBHO' {  
+                val 'NoExplorer' = d '1'  
+              }  
+            }  
+          }  
+        }  
+      }  
+    }  
+  }  
+}
